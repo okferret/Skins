@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72E9EB12632A8B700D9DF94 /* SKAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EB02632A8B700D9DF94 /* SKAction.swift */; };
+		C72E9EB52632AD5200D9DF94 /* NSLock+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EB42632AD5200D9DF94 /* NSLock+Skins.swift */; };
+		C72E9EB92632B01900D9DF94 /* UIView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EB82632B01900D9DF94 /* UIView+Skins.swift */; };
+		C72E9EBD2632C41300D9DF94 /* UIActivityIndicatorView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EBC2632C41300D9DF94 /* UIActivityIndicatorView+Skins.swift */; };
+		C72E9EC12632C4F100D9DF94 /* UIImageView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EC02632C4F100D9DF94 /* UIImageView+Skins.swift */; };
+		C72E9EC52632C58B00D9DF94 /* UIProgressView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EC42632C58B00D9DF94 /* UIProgressView+Skins.swift */; };
+		C72E9ECB2632C73C00D9DF94 /* UIButton+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ECA2632C73C00D9DF94 /* UIButton+Skins.swift */; };
+		C72E9ECF2632C9C200D9DF94 /* UIColorWell+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ECE2632C9C200D9DF94 /* UIColorWell+Skins.swift */; };
+		C72E9ED32632CA6700D9DF94 /* UIPageControl+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ED22632CA6700D9DF94 /* UIPageControl+Skins.swift */; };
+		C72E9ED72632CAE800D9DF94 /* UISegmentedControl+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ED62632CAE800D9DF94 /* UISegmentedControl+Skins.swift */; };
+		C72E9EDB2632CB5900D9DF94 /* UISlider+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EDA2632CB5900D9DF94 /* UISlider+Skins.swift */; };
+		C72E9EDF2632CBD500D9DF94 /* UISwitch+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EDE2632CBD500D9DF94 /* UISwitch+Skins.swift */; };
+		C72E9EE32632CC5000D9DF94 /* UILabel+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EE22632CC5000D9DF94 /* UILabel+Skins.swift */; };
+		C72E9EE72632CD2A00D9DF94 /* UITextField+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EE62632CD2A00D9DF94 /* UITextField+Skins.swift */; };
+		C72E9EEB2632CD6200D9DF94 /* UITextView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EEA2632CD6200D9DF94 /* UITextView+Skins.swift */; };
+		C72E9EEF2632CDEC00D9DF94 /* UISearchTextField+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EEE2632CDEC00D9DF94 /* UISearchTextField+Skins.swift */; };
+		C72E9EF32632CE5C00D9DF94 /* UIBarButtonItem+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EF22632CE5C00D9DF94 /* UIBarButtonItem+Skins.swift */; };
+		C72E9EF72632CEAA00D9DF94 /* UINavigationBar+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EF62632CEAA00D9DF94 /* UINavigationBar+Skins.swift */; };
+		C72E9EFB2632CF1D00D9DF94 /* UISearchBar+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EFA2632CF1D00D9DF94 /* UISearchBar+Skins.swift */; };
+		C72E9EFF2632CF8400D9DF94 /* UIToolbar+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EFE2632CF8400D9DF94 /* UIToolbar+Skins.swift */; };
+		C72E9F032632CFD800D9DF94 /* UITabBarItem+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F022632CFD800D9DF94 /* UITabBarItem+Skins.swift */; };
+		C72E9F072632D16200D9DF94 /* UITabBarAppearance+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F062632D16200D9DF94 /* UITabBarAppearance+Skins.swift */; };
+		C72E9F0B2632D1E200D9DF94 /* UITabBarItemStateAppearance+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F0A2632D1E200D9DF94 /* UITabBarItemStateAppearance+Skins.swift */; };
+		C72E9F0F2632D27F00D9DF94 /* UIBarAppearance+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F0E2632D27F00D9DF94 /* UIBarAppearance+Skins.swift */; };
+		C72E9F172632D5F200D9DF94 /* CALayer+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F162632D5F200D9DF94 /* CALayer+Skins.swift */; };
+		C72E9F1D2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F1C2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift */; };
+		C72E9F212632D82600D9DF94 /* CAReplicatorLayer+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F202632D82600D9DF94 /* CAReplicatorLayer+Skins.swift */; };
+		C72E9F252632D88B00D9DF94 /* CAShapeLayer+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F242632D88B00D9DF94 /* CAShapeLayer+Skins.swift */; };
+		C72E9F292632D8D300D9DF94 /* CATextLayer+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F282632D8D300D9DF94 /* CATextLayer+Skins.swift */; };
+		C72E9F2D2632D91400D9DF94 /* SFSafariViewController+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F2C2632D91400D9DF94 /* SFSafariViewController+Skins.swift */; };
+		C72E9F312632D96D00D9DF94 /* UIContextualAction+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F302632D96D00D9DF94 /* UIContextualAction+Skins.swift */; };
+		C72E9F352632D9F600D9DF94 /* UIAlertController+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F342632D9F600D9DF94 /* UIAlertController+Skins.swift */; };
+		C72E9F392632DA5C00D9DF94 /* UIRefreshControl+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F382632DA5C00D9DF94 /* UIRefreshControl+Skins.swift */; };
+		C72E9F3D2632DA9200D9DF94 /* UITableView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F3C2632DA9200D9DF94 /* UITableView+Skins.swift */; };
+		C7B87AAC263251D600345BCF /* Skins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B87AA2263251D600345BCF /* Skins.framework */; };
+		C7B87AB1263251D600345BCF /* SkinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B87AB0263251D600345BCF /* SkinsTests.swift */; };
+		C7B87AB3263251D600345BCF /* Skins.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B87AA5263251D600345BCF /* Skins.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7B87AC12632521A00345BCF /* Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B87AC02632521A00345BCF /* Skins.swift */; };
+		C7B87ACB2632524000345BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B87ACA2632524000345BCF /* AppDelegate.swift */; };
+		C7B87ACD2632524000345BCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B87ACC2632524000345BCF /* SceneDelegate.swift */; };
+		C7B87ACF2632524000345BCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B87ACE2632524000345BCF /* ViewController.swift */; };
+		C7B87AD22632524000345BCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B87AD02632524000345BCF /* Main.storyboard */; };
+		C7B87AD42632524000345BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B87AD32632524000345BCF /* Assets.xcassets */; };
+		C7B87AD72632524000345BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B87AD52632524000345BCF /* LaunchScreen.storyboard */; };
+		C7B87AE62632542200345BCF /* Skins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B87AA2263251D600345BCF /* Skins.framework */; };
+		C7B87AE72632542200345BCF /* Skins.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7B87AA2263251D600345BCF /* Skins.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7C7387426325BE9002B134B /* SKColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7387326325BE9002B134B /* SKColorable.swift */; };
+		C7C7387826325C6E002B134B /* SKUserInterfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7387726325C6E002B134B /* SKUserInterfaceStyle.swift */; };
+		C7C7387C263260D2002B134B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7387B263260D2002B134B /* UIColor+Extensions.swift */; };
+		C7C73880263260F5002B134B /* SKCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7387F263260F5002B134B /* SKCompatible.swift */; };
+		C7C7388626328A9B002B134B /* String+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7388526328A9B002B134B /* String+Skins.swift */; };
+		C7C7388D26328CB4002B134B /* skins.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7C7388C26328CB4002B134B /* skins.plist */; };
+		C7C7389126328D3C002B134B /* SKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7389026328D3C002B134B /* SKColor.swift */; };
+		C7C73895263293FE002B134B /* Skins+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C73894263293FE002B134B /* Skins+Extensions.swift */; };
+		C7C7389926329BAC002B134B /* SKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C7389826329BAC002B134B /* SKError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7B87AAD263251D600345BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B87A99263251D600345BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B87AA1263251D600345BCF;
+			remoteInfo = Skins;
+		};
+		C7B87AE82632542200345BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B87A99263251D600345BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B87AA1263251D600345BCF;
+			remoteInfo = Skins;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7B87AEA2632542200345BCF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C7B87AE72632542200345BCF /* Skins.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C72E9EB02632A8B700D9DF94 /* SKAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAction.swift; sourceTree = "<group>"; };
+		C72E9EB42632AD5200D9DF94 /* NSLock+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EB82632B01900D9DF94 /* UIView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EBC2632C41300D9DF94 /* UIActivityIndicatorView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EC02632C4F100D9DF94 /* UIImageView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EC42632C58B00D9DF94 /* UIProgressView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Skins.swift"; sourceTree = "<group>"; };
+		C72E9ECA2632C73C00D9DF94 /* UIButton+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Skins.swift"; sourceTree = "<group>"; };
+		C72E9ECE2632C9C200D9DF94 /* UIColorWell+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColorWell+Skins.swift"; sourceTree = "<group>"; };
+		C72E9ED22632CA6700D9DF94 /* UIPageControl+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Skins.swift"; sourceTree = "<group>"; };
+		C72E9ED62632CAE800D9DF94 /* UISegmentedControl+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EDA2632CB5900D9DF94 /* UISlider+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EDE2632CBD500D9DF94 /* UISwitch+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EE22632CC5000D9DF94 /* UILabel+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EE62632CD2A00D9DF94 /* UITextField+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EEA2632CD6200D9DF94 /* UITextView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EEE2632CDEC00D9DF94 /* UISearchTextField+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchTextField+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EF22632CE5C00D9DF94 /* UIBarButtonItem+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EF62632CEAA00D9DF94 /* UINavigationBar+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EFA2632CF1D00D9DF94 /* UISearchBar+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Skins.swift"; sourceTree = "<group>"; };
+		C72E9EFE2632CF8400D9DF94 /* UIToolbar+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F022632CFD800D9DF94 /* UITabBarItem+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F062632D16200D9DF94 /* UITabBarAppearance+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarAppearance+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F0A2632D1E200D9DF94 /* UITabBarItemStateAppearance+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItemStateAppearance+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F0E2632D27F00D9DF94 /* UIBarAppearance+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarAppearance+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F162632D5F200D9DF94 /* CALayer+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F1C2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAEmitterCell+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F202632D82600D9DF94 /* CAReplicatorLayer+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAReplicatorLayer+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F242632D88B00D9DF94 /* CAShapeLayer+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F282632D8D300D9DF94 /* CATextLayer+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATextLayer+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F2C2632D91400D9DF94 /* SFSafariViewController+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSafariViewController+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F302632D96D00D9DF94 /* UIContextualAction+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContextualAction+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F342632D9F600D9DF94 /* UIAlertController+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F382632DA5C00D9DF94 /* UIRefreshControl+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Skins.swift"; sourceTree = "<group>"; };
+		C72E9F3C2632DA9200D9DF94 /* UITableView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Skins.swift"; sourceTree = "<group>"; };
+		C7B87AA2263251D600345BCF /* Skins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B87AA5263251D600345BCF /* Skins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skins.h; sourceTree = "<group>"; };
+		C7B87AA6263251D600345BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B87AAB263251D600345BCF /* SkinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B87AB0263251D600345BCF /* SkinsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsTests.swift; sourceTree = "<group>"; };
+		C7B87AB2263251D600345BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B87AC02632521A00345BCF /* Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skins.swift; sourceTree = "<group>"; };
+		C7B87AC82632524000345BCF /* Skins-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skins-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B87ACA2632524000345BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7B87ACC2632524000345BCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7B87ACE2632524000345BCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7B87AD12632524000345BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7B87AD32632524000345BCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7B87AD62632524000345BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7B87AD82632524000345BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C7387326325BE9002B134B /* SKColorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKColorable.swift; sourceTree = "<group>"; };
+		C7C7387726325C6E002B134B /* SKUserInterfaceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUserInterfaceStyle.swift; sourceTree = "<group>"; };
+		C7C7387B263260D2002B134B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		C7C7387F263260F5002B134B /* SKCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCompatible.swift; sourceTree = "<group>"; };
+		C7C7388526328A9B002B134B /* String+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Skins.swift"; sourceTree = "<group>"; };
+		C7C7388C26328CB4002B134B /* skins.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = skins.plist; sourceTree = "<group>"; };
+		C7C7389026328D3C002B134B /* SKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKColor.swift; sourceTree = "<group>"; };
+		C7C73894263293FE002B134B /* Skins+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Skins+Extensions.swift"; sourceTree = "<group>"; };
+		C7C7389826329BAC002B134B /* SKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7B87A9F263251D600345BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B87AA8263251D600345BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B87AAC263251D600345BCF /* Skins.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B87AC52632524000345BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B87AE62632542200345BCF /* Skins.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C72E9F122632D33700D9DF94 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C72E9F2C2632D91400D9DF94 /* SFSafariViewController+Skins.swift */,
+				C72E9EBC2632C41300D9DF94 /* UIActivityIndicatorView+Skins.swift */,
+				C72E9F342632D9F600D9DF94 /* UIAlertController+Skins.swift */,
+				C72E9F0E2632D27F00D9DF94 /* UIBarAppearance+Skins.swift */,
+				C72E9EF22632CE5C00D9DF94 /* UIBarButtonItem+Skins.swift */,
+				C72E9ECA2632C73C00D9DF94 /* UIButton+Skins.swift */,
+				C72E9ECE2632C9C200D9DF94 /* UIColorWell+Skins.swift */,
+				C72E9F302632D96D00D9DF94 /* UIContextualAction+Skins.swift */,
+				C72E9EC02632C4F100D9DF94 /* UIImageView+Skins.swift */,
+				C72E9EE22632CC5000D9DF94 /* UILabel+Skins.swift */,
+				C72E9EF62632CEAA00D9DF94 /* UINavigationBar+Skins.swift */,
+				C72E9ED22632CA6700D9DF94 /* UIPageControl+Skins.swift */,
+				C72E9EC42632C58B00D9DF94 /* UIProgressView+Skins.swift */,
+				C72E9F382632DA5C00D9DF94 /* UIRefreshControl+Skins.swift */,
+				C72E9EFA2632CF1D00D9DF94 /* UISearchBar+Skins.swift */,
+				C72E9EEE2632CDEC00D9DF94 /* UISearchTextField+Skins.swift */,
+				C72E9ED62632CAE800D9DF94 /* UISegmentedControl+Skins.swift */,
+				C72E9EDA2632CB5900D9DF94 /* UISlider+Skins.swift */,
+				C72E9EDE2632CBD500D9DF94 /* UISwitch+Skins.swift */,
+				C72E9F062632D16200D9DF94 /* UITabBarAppearance+Skins.swift */,
+				C72E9F022632CFD800D9DF94 /* UITabBarItem+Skins.swift */,
+				C72E9F0A2632D1E200D9DF94 /* UITabBarItemStateAppearance+Skins.swift */,
+				C72E9F3C2632DA9200D9DF94 /* UITableView+Skins.swift */,
+				C72E9EE62632CD2A00D9DF94 /* UITextField+Skins.swift */,
+				C72E9EEA2632CD6200D9DF94 /* UITextView+Skins.swift */,
+				C72E9EFE2632CF8400D9DF94 /* UIToolbar+Skins.swift */,
+				C72E9EB82632B01900D9DF94 /* UIView+Skins.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C72E9F152632D5C700D9DF94 /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				C72E9F1C2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift */,
+				C72E9F162632D5F200D9DF94 /* CALayer+Skins.swift */,
+				C72E9F202632D82600D9DF94 /* CAReplicatorLayer+Skins.swift */,
+				C72E9F242632D88B00D9DF94 /* CAShapeLayer+Skins.swift */,
+				C72E9F282632D8D300D9DF94 /* CATextLayer+Skins.swift */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		C7B87A98263251D600345BCF = {
+			isa = PBXGroup;
+			children = (
+				C7B87AA4263251D600345BCF /* Skins */,
+				C7B87AAF263251D600345BCF /* SkinsTests */,
+				C7B87AC92632524000345BCF /* Skins-Demo */,
+				C7B87AA3263251D600345BCF /* Products */,
+				C7B87AE52632542200345BCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7B87AA3263251D600345BCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7B87AA2263251D600345BCF /* Skins.framework */,
+				C7B87AAB263251D600345BCF /* SkinsTests.xctest */,
+				C7B87AC82632524000345BCF /* Skins-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7B87AA4263251D600345BCF /* Skins */ = {
+			isa = PBXGroup;
+			children = (
+				C7B87AA5263251D600345BCF /* Skins.h */,
+				C7B87AA6263251D600345BCF /* Info.plist */,
+				C72E9EB02632A8B700D9DF94 /* SKAction.swift */,
+				C7C7387326325BE9002B134B /* SKColorable.swift */,
+				C7C7387F263260F5002B134B /* SKCompatible.swift */,
+				C7C7389826329BAC002B134B /* SKError.swift */,
+				C7B87AC02632521A00345BCF /* Skins.swift */,
+				C7C73894263293FE002B134B /* Skins+Extensions.swift */,
+				C7C7387726325C6E002B134B /* SKUserInterfaceStyle.swift */,
+				C7C7388B26328C8C002B134B /* Extensions */,
+				C72E9F152632D5C700D9DF94 /* QuartzCore */,
+				C72E9F122632D33700D9DF94 /* UIKit */,
+			);
+			path = Skins;
+			sourceTree = "<group>";
+		};
+		C7B87AAF263251D600345BCF /* SkinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B87AB0263251D600345BCF /* SkinsTests.swift */,
+				C7B87AB2263251D600345BCF /* Info.plist */,
+			);
+			path = SkinsTests;
+			sourceTree = "<group>";
+		};
+		C7B87AC92632524000345BCF /* Skins-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C7B87ACA2632524000345BCF /* AppDelegate.swift */,
+				C7B87ACC2632524000345BCF /* SceneDelegate.swift */,
+				C7B87ACE2632524000345BCF /* ViewController.swift */,
+				C7B87AD02632524000345BCF /* Main.storyboard */,
+				C7B87AD32632524000345BCF /* Assets.xcassets */,
+				C7B87AD52632524000345BCF /* LaunchScreen.storyboard */,
+				C7B87AD82632524000345BCF /* Info.plist */,
+				C7C7388C26328CB4002B134B /* skins.plist */,
+				C7C7389026328D3C002B134B /* SKColor.swift */,
+			);
+			path = "Skins-Demo";
+			sourceTree = "<group>";
+		};
+		C7B87AE52632542200345BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7C7388B26328C8C002B134B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7C7388526328A9B002B134B /* String+Skins.swift */,
+				C7C7387B263260D2002B134B /* UIColor+Extensions.swift */,
+				C72E9EB42632AD5200D9DF94 /* NSLock+Skins.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C7B87A9D263251D600345BCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B87AB3263251D600345BCF /* Skins.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C7B87AA1263251D600345BCF /* Skins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B87AB6263251D600345BCF /* Build configuration list for PBXNativeTarget "Skins" */;
+			buildPhases = (
+				C7B87A9D263251D600345BCF /* Headers */,
+				C7B87A9E263251D600345BCF /* Sources */,
+				C7B87A9F263251D600345BCF /* Frameworks */,
+				C7B87AA0263251D600345BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skins;
+			productName = Skins;
+			productReference = C7B87AA2263251D600345BCF /* Skins.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7B87AAA263251D600345BCF /* SkinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B87AB9263251D600345BCF /* Build configuration list for PBXNativeTarget "SkinsTests" */;
+			buildPhases = (
+				C7B87AA7263251D600345BCF /* Sources */,
+				C7B87AA8263251D600345BCF /* Frameworks */,
+				C7B87AA9263251D600345BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B87AAE263251D600345BCF /* PBXTargetDependency */,
+			);
+			name = SkinsTests;
+			productName = SkinsTests;
+			productReference = C7B87AAB263251D600345BCF /* SkinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7B87AC72632524000345BCF /* Skins-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B87AD92632524000345BCF /* Build configuration list for PBXNativeTarget "Skins-Demo" */;
+			buildPhases = (
+				C7B87AC42632524000345BCF /* Sources */,
+				C7B87AC52632524000345BCF /* Frameworks */,
+				C7B87AC62632524000345BCF /* Resources */,
+				C7B87AEA2632542200345BCF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B87AE92632542200345BCF /* PBXTargetDependency */,
+			);
+			name = "Skins-Demo";
+			productName = "Skins-Demo";
+			productReference = C7B87AC82632524000345BCF /* Skins-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7B87A99263251D600345BCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C7B87AA1263251D600345BCF = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					C7B87AAA263251D600345BCF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C7B87AC72632524000345BCF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C7B87A9C263251D600345BCF /* Build configuration list for PBXProject "Skins" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7B87A98263251D600345BCF;
+			productRefGroup = C7B87AA3263251D600345BCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7B87AA1263251D600345BCF /* Skins */,
+				C7B87AAA263251D600345BCF /* SkinsTests */,
+				C7B87AC72632524000345BCF /* Skins-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7B87AA0263251D600345BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B87AA9263251D600345BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B87AC62632524000345BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B87AD72632524000345BCF /* LaunchScreen.storyboard in Resources */,
+				C7C7388D26328CB4002B134B /* skins.plist in Resources */,
+				C7B87AD42632524000345BCF /* Assets.xcassets in Resources */,
+				C7B87AD22632524000345BCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7B87A9E263251D600345BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72E9F252632D88B00D9DF94 /* CAShapeLayer+Skins.swift in Sources */,
+				C72E9EF32632CE5C00D9DF94 /* UIBarButtonItem+Skins.swift in Sources */,
+				C72E9F292632D8D300D9DF94 /* CATextLayer+Skins.swift in Sources */,
+				C72E9EE72632CD2A00D9DF94 /* UITextField+Skins.swift in Sources */,
+				C72E9ECB2632C73C00D9DF94 /* UIButton+Skins.swift in Sources */,
+				C72E9EBD2632C41300D9DF94 /* UIActivityIndicatorView+Skins.swift in Sources */,
+				C72E9F2D2632D91400D9DF94 /* SFSafariViewController+Skins.swift in Sources */,
+				C72E9EDF2632CBD500D9DF94 /* UISwitch+Skins.swift in Sources */,
+				C72E9EB52632AD5200D9DF94 /* NSLock+Skins.swift in Sources */,
+				C72E9EC52632C58B00D9DF94 /* UIProgressView+Skins.swift in Sources */,
+				C72E9EFB2632CF1D00D9DF94 /* UISearchBar+Skins.swift in Sources */,
+				C72E9F032632CFD800D9DF94 /* UITabBarItem+Skins.swift in Sources */,
+				C72E9F172632D5F200D9DF94 /* CALayer+Skins.swift in Sources */,
+				C7C7389926329BAC002B134B /* SKError.swift in Sources */,
+				C72E9F0B2632D1E200D9DF94 /* UITabBarItemStateAppearance+Skins.swift in Sources */,
+				C7C7387826325C6E002B134B /* SKUserInterfaceStyle.swift in Sources */,
+				C72E9F1D2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift in Sources */,
+				C72E9F0F2632D27F00D9DF94 /* UIBarAppearance+Skins.swift in Sources */,
+				C72E9ECF2632C9C200D9DF94 /* UIColorWell+Skins.swift in Sources */,
+				C7C7388626328A9B002B134B /* String+Skins.swift in Sources */,
+				C7B87AC12632521A00345BCF /* Skins.swift in Sources */,
+				C72E9F352632D9F600D9DF94 /* UIAlertController+Skins.swift in Sources */,
+				C72E9EB92632B01900D9DF94 /* UIView+Skins.swift in Sources */,
+				C7C73880263260F5002B134B /* SKCompatible.swift in Sources */,
+				C72E9F392632DA5C00D9DF94 /* UIRefreshControl+Skins.swift in Sources */,
+				C72E9F312632D96D00D9DF94 /* UIContextualAction+Skins.swift in Sources */,
+				C72E9EC12632C4F100D9DF94 /* UIImageView+Skins.swift in Sources */,
+				C7C7387426325BE9002B134B /* SKColorable.swift in Sources */,
+				C72E9EF72632CEAA00D9DF94 /* UINavigationBar+Skins.swift in Sources */,
+				C72E9ED32632CA6700D9DF94 /* UIPageControl+Skins.swift in Sources */,
+				C72E9EEF2632CDEC00D9DF94 /* UISearchTextField+Skins.swift in Sources */,
+				C72E9EFF2632CF8400D9DF94 /* UIToolbar+Skins.swift in Sources */,
+				C72E9F3D2632DA9200D9DF94 /* UITableView+Skins.swift in Sources */,
+				C72E9F212632D82600D9DF94 /* CAReplicatorLayer+Skins.swift in Sources */,
+				C72E9F072632D16200D9DF94 /* UITabBarAppearance+Skins.swift in Sources */,
+				C7C73895263293FE002B134B /* Skins+Extensions.swift in Sources */,
+				C72E9EDB2632CB5900D9DF94 /* UISlider+Skins.swift in Sources */,
+				C7C7387C263260D2002B134B /* UIColor+Extensions.swift in Sources */,
+				C72E9EB12632A8B700D9DF94 /* SKAction.swift in Sources */,
+				C72E9EEB2632CD6200D9DF94 /* UITextView+Skins.swift in Sources */,
+				C72E9EE32632CC5000D9DF94 /* UILabel+Skins.swift in Sources */,
+				C72E9ED72632CAE800D9DF94 /* UISegmentedControl+Skins.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B87AA7263251D600345BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B87AB1263251D600345BCF /* SkinsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B87AC42632524000345BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B87ACF2632524000345BCF /* ViewController.swift in Sources */,
+				C7C7389126328D3C002B134B /* SKColor.swift in Sources */,
+				C7B87ACB2632524000345BCF /* AppDelegate.swift in Sources */,
+				C7B87ACD2632524000345BCF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7B87AAE263251D600345BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B87AA1263251D600345BCF /* Skins */;
+			targetProxy = C7B87AAD263251D600345BCF /* PBXContainerItemProxy */;
+		};
+		C7B87AE92632542200345BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B87AA1263251D600345BCF /* Skins */;
+			targetProxy = C7B87AE82632542200345BCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7B87AD02632524000345BCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B87AD12632524000345BCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7B87AD52632524000345BCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B87AD62632524000345BCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7B87AB4263251D600345BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7B87AB5263251D600345BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7B87AB7263251D600345BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Skins/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sina.Skins;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7B87AB8263251D600345BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Skins/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sina.Skins;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7B87ABA263251D600345BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				INFOPLIST_FILE = SkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sina.SkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7B87ABB263251D600345BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				INFOPLIST_FILE = SkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sina.SkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7B87ADA2632524000345BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				INFOPLIST_FILE = "Skins-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.sina.Skins-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7B87ADB2632524000345BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				INFOPLIST_FILE = "Skins-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.sina.Skins-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7B87A9C263251D600345BCF /* Build configuration list for PBXProject "Skins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B87AB4263251D600345BCF /* Debug */,
+				C7B87AB5263251D600345BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B87AB6263251D600345BCF /* Build configuration list for PBXNativeTarget "Skins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B87AB7263251D600345BCF /* Debug */,
+				C7B87AB8263251D600345BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B87AB9263251D600345BCF /* Build configuration list for PBXNativeTarget "SkinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B87ABA263251D600345BCF /* Debug */,
+				C7B87ABB263251D600345BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B87AD92632524000345BCF /* Build configuration list for PBXNativeTarget "Skins-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B87ADA2632524000345BCF /* Debug */,
+				C7B87ADB2632524000345BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7B87A99263251D600345BCF /* Project object */;
+}

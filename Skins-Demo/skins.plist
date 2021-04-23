@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>major</key>
+	<dict>
+		<key>light</key>
+		<string>#B3E5FC</string>
+		<key>dark</key>
+		<string>#00897B</string>
+		<key>cool</key>
+		<string>#6D4C41</string>
+	</dict>
+	<key>meduim</key>
+	<dict>
+		<key>light</key>
+		<string>#FFFFFF</string>
+		<key>dark</key>
+		<string>#000000</string>
+		<key>cool</key>
+		<string>#555555</string>
+	</dict>
+	<key>background</key>
+	<dict>
+		<key>light</key>
+		<string>#FFFFFF</string>
+		<key>dark</key>
+		<string>#000000</string>
+		<key>cool</key>
+		<string>#555555</string>
+	</dict>
+	<key>foreground</key>
+	<dict>
+		<key>light</key>
+		<string>#FFFFFF</string>
+		<key>dark</key>
+		<string>#000000</string>
+		<key>cool</key>
+		<string>#555555</string>
+	</dict>
+	<key>highlight</key>
+	<dict>
+		<key>light</key>
+		<string>#FFFFFF</string>
+		<key>dark</key>
+		<string>#000000</string>
+		<key>cool</key>
+		<string>#555555</string>
+	</dict>
+</dict>
+</plist>
