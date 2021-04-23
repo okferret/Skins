@@ -14,7 +14,7 @@
 	<key>meduim</key>
 	<dict>
 		<key>light</key>
-		<string>#FFFFFF</string>
+		<string>#777777</string>
 		<key>dark</key>
 		<string>#000000</string>
 		<key>cool</key>
@@ -32,7 +32,7 @@
 	<key>foreground</key>
 	<dict>
 		<key>light</key>
-		<string>#FFFFFF</string>
+		<string>#000000</string>
 		<key>dark</key>
 		<string>#000000</string>
 		<key>cool</key>

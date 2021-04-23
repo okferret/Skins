@@ -14,12 +14,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.skin.backgroundColor = .major
+        view.skin.backgroundColor = .meduim
         view.layer.skin.borderColor = .major
         view.layer.skin.backgroundColor = .major
         view.layer.skin.shadowColor = .major
         view.layer.skin.shadowColor = .major
         Skins.shared.log()
+        
+        let button = UIButton.init(type: .custom)
+        button.setTitle("fasdfasdfasdf", for: .normal)
+        button.skin.setTitleColor(.meduim, for: .normal)
+        button.skin.setTitleColor(.foreground, for: .highlighted)
+        button.sizeToFit()
+        
+        view.addSubview(button)
+        button.center = view.center
     }
 
     

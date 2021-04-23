@@ -11,9 +11,13 @@ import UIKit
 
 /// SKColorable
 public protocol SKColorable: Decodable {
+    /// color hex string
     var light: String { get }
+    /// color hex string
     var dark: String { get }
     
+    /// value for SKUserInterfaceStyle
+    /// - Parameter interfaceStyle: SKUserInterfaceStyle
     func value(for interfaceStyle: SKUserInterfaceStyle) -> String
 }
 

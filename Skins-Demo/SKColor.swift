@@ -38,6 +38,14 @@ extension Skins.Color {
     
     /// major color
     internal static var major: Skins.Color {
-        return .init(rawValue: "major")
+        return .init(rawValue: #function)
+    }
+    
+    internal static var meduim: Skins.Color {
+        return .init(rawValue: #function)
+    }
+    
+    internal static var foreground: Skins.Color {
+        return .init(rawValue: #function)
     }
 }
