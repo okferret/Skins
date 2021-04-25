@@ -11,7 +11,7 @@ import UIKit.UIColorWell
 @available(iOS 14.0, *)
 extension SKCompatibleWrapper where Base: UIColorWell {
     
-    /// 
+    ///  selectedColor
     public var selectedColor: Skins.Color? {
         get { nil }
         set {
