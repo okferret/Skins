@@ -21,7 +21,7 @@ A powerful theme manager of swift projects
 ##Example
 	
 	1. plist file
-		![](/plist.png)
+		<img src="http://tva2.sinaimg.cn/large/006g6WbKly1gpvzdpjrpqj31100gaq5i.jpg" width = "200" height = "300" alt="" align=center />
 		
 	2. setup
 		![](http://tvax4.sinaimg.cn/large/006g6WbKly1gpvzo8iqw8j31cs07idho.jpg)
