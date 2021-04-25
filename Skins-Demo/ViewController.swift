@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.skin.backgroundColor = .meduim
-        Skins.shared.log()
+        
         
         let button = UIButton.init(type: .custom)
         button.setTitle("fasdfasdfasdf", for: .normal)
