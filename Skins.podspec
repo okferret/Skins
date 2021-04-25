@@ -18,6 +18,7 @@ spec.author             = { "tramp" => "wg_workshop@hotmail.com" }
 spec.platform     = :ios
 spec.requires_arc = true
 
+
 #  When using multiple platforms
 spec.ios.deployment_target = "9.0"
 # spec.osx.deployment_target = "10.7"
@@ -25,12 +26,13 @@ spec.ios.deployment_target = "9.0"
 # spec.tvos.deployment_target = "9.0"
 spec.source       = { :git => "https://github.com/imotoboy/Skins.git", :tag => "#{spec.version}" }
 
-spec.source_files  = "Skins/*.*", "Skins/**/*.swift"
+spec.source_files  = 'Skins/*.{swift, h}', 'Skins/**/*.swift'
 # spec.exclude_files = "Skins/Extensions"
 
 # spec.public_header_files = "Classes/**/*.h"
 
-
+spec.ios.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'SafariServices'
+# spec.tvos.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'SafariServices'
 
 # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
