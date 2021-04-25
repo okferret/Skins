@@ -25,12 +25,17 @@ class ViewController: UIViewController {
         button.setTitle("fasdfasdfasdf", for: .normal)
         button.skin.setTitleColor(.meduim, for: .normal)
         button.skin.setTitleColor(.foreground, for: .highlighted)
-        button.sizeToFit()
-        
+        button.frame = .init(x: 0.0, y: 0.0, width: 100, height: 100)
+        button.addTarget(self, action: #selector(actionHandle), for: .touchUpInside)
         view.addSubview(button)
         button.center = view.center
     }
-
+    
+    /// actionHandle
+    /// - Parameter sender: UIButton
+    @objc private func actionHandle(_ sender: UIButton) {
+        Skins.shared.change(style: .cool)
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
    
@@ -46,4 +51,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

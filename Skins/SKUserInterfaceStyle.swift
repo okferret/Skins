@@ -8,8 +8,15 @@
 import Foundation
 import UIKit
 
+extension SKUserInterfaceStyle {
+    
+    /// userDefaultsKey
+    internal static var userDefaultsKey: String { "SKUserInterfaceStyle.userDefaults.key" }
+}
+
 /// SKUserInterfaceStyle
 public struct SKUserInterfaceStyle {
+    /// raw value of SKUserInterfaceStyle
     internal let rawValue: String
     
     /// 构建
@@ -32,6 +39,9 @@ extension SKUserInterfaceStyle: Equatable {
 }
 
 extension SKUserInterfaceStyle {
+    
+    /// SKUserInterfaceStyle.unspecified
+    public static let unspecified: SKUserInterfaceStyle = .init(rawValue: "SKUserInterfaceStyle.unspecified")
     /// SKUserInterfaceStyle.light
     public static let light: SKUserInterfaceStyle = .init(rawValue: "SKUserInterfaceStyle.light")
     /// SKUserInterfaceStyle.dark
@@ -39,14 +49,6 @@ extension SKUserInterfaceStyle {
     
     /// SKUserInterfaceStyle
     public static var current: SKUserInterfaceStyle {
-        if let value  = UserDefaults.standard.string(forKey: "SKUserInterfaceStyle.current.key") {
-            return .init(rawValue: value)
-        } else {
-            if #available(iOS 13.0, *) {
-                return UITraitCollection.current.userInterfaceStyle == .dark ? .dark : .light
-            } else {
-                return .light
-            }
-        }
+        return Skins.shared.interfaceStyle
     }
 }

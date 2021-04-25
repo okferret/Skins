@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Skins
 public class Skins: NSObject {
@@ -14,6 +15,19 @@ public class Skins: NSObject {
     
     /// single object of Skins
     public static let shared: Skins = .init()
+    ///  current interface style SKUserInterfaceStyle
+    public var interfaceStyle: SKUserInterfaceStyle {
+        let defaultKey = SKUserInterfaceStyle.userDefaultsKey
+        if let value = UserDefaults.standard.string(forKey: defaultKey) {
+            return .init(rawValue: value)
+        } else {
+            if #available(iOS 13.0, *) {
+                return UITraitCollection.current.userInterfaceStyle == .dark ? .dark : .light
+            } else {
+                return .light
+            }
+        }
+    }
     
     // MARK: - 私有属性
     
@@ -50,6 +64,48 @@ extension Skins {
     /// - Returns: SKColorable
     public func color(for key: Color) -> SKColorable? {
         return colors[key]
+    }
+    
+    /// change style
+    /// - Parameter interfaceStyle: SKUserInterfaceStyle
+    public func change(style interfaceStyle: SKUserInterfaceStyle) {
+        switch interfaceStyle {
+        case .dark:
+            if #available(iOS 13.0, *) {
+                for window in UIApplication.shared.windows {
+                    window.overrideUserInterfaceStyle = .dark
+                }
+            }
+        case .light:
+            if #available(iOS 13.0, *) {
+                for window in UIApplication.shared.windows {
+                    window.overrideUserInterfaceStyle = .light
+                }
+            }
+        default: break
+        }
+        guard let map = map as? NSMapTable<AnyObject, AnyObject>, let dicts = NSAllMapTableValues(map) as? [NSDictionary] else { return }
+        for dict in dicts {
+            for value in dict.allValues where value is SKAction {
+                guard let action = value as? SKAction else { continue }
+                action.run(with: interfaceStyle)
+            }
+        }
+        // save style
+        save(style: interfaceStyle)
+    }
+    
+    /// save  interface to user defaults
+    /// - Parameter interfaceStyle: SKUserInterfaceStyle
+    private func save(style interfaceStyle: SKUserInterfaceStyle) {
+        let defaultKey = SKUserInterfaceStyle.userDefaultsKey
+        if interfaceStyle == .unspecified {
+            UserDefaults.standard.setValue(nil, forKey: defaultKey)
+            UserDefaults.standard.synchronize()
+        } else {
+            UserDefaults.standard.setValue(interfaceStyle.rawValue, forKey: defaultKey)
+            UserDefaults.standard.synchronize()
+        }
     }
     
     /// log
