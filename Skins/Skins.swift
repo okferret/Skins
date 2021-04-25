@@ -16,19 +16,7 @@ public class Skins: NSObject {
     /// single object of Skins
     public static let shared: Skins = .init()
     ///  current interface style SKUserInterfaceStyle
-    public var interfaceStyle: SKUserInterfaceStyle {
-        let defaultKey = SKUserInterfaceStyle.userDefaultsKey
-        if let value = UserDefaults.standard.string(forKey: defaultKey) {
-            return .init(rawValue: value)
-        } else {
-            if #available(iOS 13.0, *) {
-                return UITraitCollection.current.userInterfaceStyle == .dark ? .dark : .light
-            } else {
-                return .light
-            }
-        }
-    }
-    
+    public private(set) var interfaceStyle: SKUserInterfaceStyle = .unspecified
     // MARK: - 私有属性
     
     /// [ColorKey: SKColorable]
@@ -37,6 +25,21 @@ public class Skins: NSObject {
     private lazy var map: NSMapTable<AnyObject, NSMutableDictionary> = .init(keyOptions: .weakMemory, valueOptions: .strongMemory)
     /// NSLock
     private lazy var lock: NSLock = .init()
+    /// SKUserInterfaceStyle
+    private var _interfaceStyle: SKUserInterfaceStyle {
+        let defaultKey = SKUserInterfaceStyle.userDefaultsKey
+        if let value = UserDefaults.standard.string(forKey: defaultKey) {
+            return .init(rawValue: value)
+        } else {
+            return .unspecified
+        }
+    }
+    
+    // MARK: - 生命周期
+    private override init() {
+        super.init()
+        interfaceStyle = _interfaceStyle
+    }
 }
 
 extension Skins {
@@ -69,6 +72,7 @@ extension Skins {
     /// change style
     /// - Parameter interfaceStyle: SKUserInterfaceStyle
     public func change(style interfaceStyle: SKUserInterfaceStyle) {
+        self.interfaceStyle = interfaceStyle
         switch interfaceStyle {
         case .dark:
             if #available(iOS 13.0, *) {

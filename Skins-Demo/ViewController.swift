@@ -15,18 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.skin.backgroundColor = .meduim
-        view.layer.skin.borderColor = .major
-        view.layer.skin.backgroundColor = .major
-        view.layer.skin.shadowColor = .major
-        view.layer.skin.shadowColor = .major
         Skins.shared.log()
         
         let button = UIButton.init(type: .custom)
         button.setTitle("fasdfasdfasdf", for: .normal)
-        button.skin.setTitleColor(.meduim, for: .normal)
-        button.skin.setTitleColor(.foreground, for: .highlighted)
         button.frame = .init(x: 0.0, y: 0.0, width: 100, height: 100)
         button.addTarget(self, action: #selector(actionHandle), for: .touchUpInside)
+        button.backgroundColor = .red
         view.addSubview(button)
         button.center = view.center
     }
@@ -34,7 +29,7 @@ class ViewController: UIViewController {
     /// actionHandle
     /// - Parameter sender: UIButton
     @objc private func actionHandle(_ sender: UIButton) {
-        Skins.shared.change(style: .cool)
+        Skins.shared.change(style: .dark)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
