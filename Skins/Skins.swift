@@ -36,6 +36,8 @@ public class Skins: NSObject {
     }
     
     // MARK: - 生命周期
+    
+    /// 构建
     private override init() {
         super.init()
         interfaceStyle = _interfaceStyle
@@ -73,6 +75,9 @@ extension Skins {
     /// - Parameter interfaceStyle: SKUserInterfaceStyle
     public func change(style interfaceStyle: SKUserInterfaceStyle) {
         self.interfaceStyle = interfaceStyle
+        // save style
+        save(style: interfaceStyle)
+        
         switch interfaceStyle {
         case .dark:
             if #available(iOS 13.0, *) {
@@ -95,8 +100,7 @@ extension Skins {
                 action.run(with: interfaceStyle)
             }
         }
-        // save style
-        save(style: interfaceStyle)
+
     }
     
     /// save  interface to user defaults
