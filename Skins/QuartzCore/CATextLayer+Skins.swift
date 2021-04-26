@@ -21,9 +21,9 @@ extension SKCompatibleWrapper where Base: CATextLayer {
                 return
             }
             let actionKey: SKAction.Key = .init(string: #function)
-            let action: SKAction = .init(color: color) { [weak base](style, color) in
+            let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
                 base?.foregroundColor = color.color(for: style).cgColor
-            }
+            }))
             Skins.shared.set((actionKey,action), for: base)
             action.run()
         }

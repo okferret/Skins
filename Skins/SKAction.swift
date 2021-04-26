@@ -7,23 +7,27 @@
 
 import Foundation
 
+extension SKAction {
+    
+    public enum Entity {
+        /// color
+        case color(_ color: SKColorable, _ handle: (_ style: SKUserInterfaceStyle, _ color: SKColorable) -> Void)
+        /// colors
+        case colors(_ colors: [SKColorable], _ handle: (_ style: SKUserInterfaceStyle, _ colors: [SKColorable]) -> Void)
+    }
+}
 
 /// SKAction
 public class SKAction: NSObject {
     public typealias Key = NSString
     
-    /// (_ style: SKUserInterfaceStyle, _ color: SKColorable) -> Void
-    private let handle: (_ style: SKUserInterfaceStyle, _ color: SKColorable) -> Void
-    /// SKColorable
-    private let color: SKColorable
+    /// Entity
+    private let entity: Entity
     
     /// 构建
-    /// - Parameters:
-    ///   - color: SKColorable
-    ///   - handle: (_ style: SKUserInterfaceStyle, _ color: SKColorable) -> Void
-    internal init(color: SKColorable, handle: @escaping (_ style: SKUserInterfaceStyle, _ color: SKColorable) -> Void) {
-        self.color = color
-        self.handle = handle
+    /// - Parameter entity: Entity
+    internal init(entity: Entity) {
+        self.entity = entity
     }
 }
 
@@ -33,7 +37,13 @@ extension SKAction {
     /// - Parameter style: SKUserInterfaceStyle
     @discardableResult
     public func run(with style: SKUserInterfaceStyle = .current) -> Self {
-        handle(style, color)
+        // handle(style, color)
+        switch entity {
+        case .color(let color, let handle):
+            handle(style, color)
+        case .colors(let colors, let handle):
+            handle(style, colors)
+        }
         return self
     }
 }

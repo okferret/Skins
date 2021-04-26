@@ -19,9 +19,9 @@ extension SKCompatibleWrapper where Base: UIProgressView {
                 return
             }
             let actionKey: SKAction.Key = .init(string: #function)
-            let action: SKAction = .init(color: color) { [weak base](style, color) in
+            let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
                 base?.progressTintColor = color.color(for: style)
-            }
+            }))
             Skins.shared.set((actionKey, action), for: base)
             action.run()
         }
@@ -36,9 +36,9 @@ extension SKCompatibleWrapper where Base: UIProgressView {
                 return
             }
             let actionKey: SKAction.Key = .init(string: #function)
-            let action: SKAction = .init(color: color) { [weak base](style, color) in
+            let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
                 base?.trackTintColor = color.color(for: style)
-            }
+            }))
             Skins.shared.set((actionKey, action), for: base)
             action.run()
         }

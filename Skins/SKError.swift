@@ -8,7 +8,7 @@
 import Foundation
 
 /// SKError
-struct SKError {
+internal struct SKError {
     internal let code: Int
     internal let message: String
     

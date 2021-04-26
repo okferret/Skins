@@ -40,6 +40,8 @@
 		C72E9F352632D9F600D9DF94 /* UIAlertController+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F342632D9F600D9DF94 /* UIAlertController+Skins.swift */; };
 		C72E9F392632DA5C00D9DF94 /* UIRefreshControl+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F382632DA5C00D9DF94 /* UIRefreshControl+Skins.swift */; };
 		C72E9F3D2632DA9200D9DF94 /* UITableView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9F3C2632DA9200D9DF94 /* UITableView+Skins.swift */; };
+		C7A23AFD26364CD00056129E /* UIPopoverPresentationController+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23AFC26364CD00056129E /* UIPopoverPresentationController+Skins.swift */; };
+		C7A23B072636541E0056129E /* CAGradientLayer+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B062636541E0056129E /* CAGradientLayer+Skins.swift */; };
 		C7B87AAC263251D600345BCF /* Skins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B87AA2263251D600345BCF /* Skins.framework */; };
 		C7B87AB1263251D600345BCF /* SkinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B87AB0263251D600345BCF /* SkinsTests.swift */; };
 		C7B87AB3263251D600345BCF /* Skins.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B87AA5263251D600345BCF /* Skins.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -128,6 +130,8 @@
 		C72E9F342632D9F600D9DF94 /* UIAlertController+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Skins.swift"; sourceTree = "<group>"; };
 		C72E9F382632DA5C00D9DF94 /* UIRefreshControl+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Skins.swift"; sourceTree = "<group>"; };
 		C72E9F3C2632DA9200D9DF94 /* UITableView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Skins.swift"; sourceTree = "<group>"; };
+		C7A23AFC26364CD00056129E /* UIPopoverPresentationController+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverPresentationController+Skins.swift"; sourceTree = "<group>"; };
+		C7A23B062636541E0056129E /* CAGradientLayer+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Skins.swift"; sourceTree = "<group>"; };
 		C7B87AA2263251D600345BCF /* Skins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B87AA5263251D600345BCF /* Skins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skins.h; sourceTree = "<group>"; };
 		C7B87AA6263251D600345BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				C72E9F022632CFD800D9DF94 /* UITabBarItem+Skins.swift */,
 				C72E9F0A2632D1E200D9DF94 /* UITabBarItemStateAppearance+Skins.swift */,
 				C72E9F3C2632DA9200D9DF94 /* UITableView+Skins.swift */,
+				C7A23AFC26364CD00056129E /* UIPopoverPresentationController+Skins.swift */,
 				C72E9EE62632CD2A00D9DF94 /* UITextField+Skins.swift */,
 				C72E9EEA2632CD6200D9DF94 /* UITextView+Skins.swift */,
 				C72E9EFE2632CF8400D9DF94 /* UIToolbar+Skins.swift */,
@@ -222,6 +227,7 @@
 				C72E9F202632D82600D9DF94 /* CAReplicatorLayer+Skins.swift */,
 				C72E9F242632D88B00D9DF94 /* CAShapeLayer+Skins.swift */,
 				C72E9F282632D8D300D9DF94 /* CATextLayer+Skins.swift */,
+				C7A23B062636541E0056129E /* CAGradientLayer+Skins.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -473,6 +479,8 @@
 				C7B87AC12632521A00345BCF /* Skins.swift in Sources */,
 				C72E9F352632D9F600D9DF94 /* UIAlertController+Skins.swift in Sources */,
 				C72E9EB92632B01900D9DF94 /* UIView+Skins.swift in Sources */,
+				C7A23B072636541E0056129E /* CAGradientLayer+Skins.swift in Sources */,
+				C7A23AFD26364CD00056129E /* UIPopoverPresentationController+Skins.swift in Sources */,
 				C7C73880263260F5002B134B /* SKCompatible.swift in Sources */,
 				C72E9F392632DA5C00D9DF94 /* UIRefreshControl+Skins.swift in Sources */,
 				C72E9F312632D96D00D9DF94 /* UIContextualAction+Skins.swift in Sources */,

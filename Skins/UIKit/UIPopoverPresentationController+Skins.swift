@@ -1,17 +1,16 @@
 //
-//  UIContextualAction+Skins.swift
+//  UIPopoverPresentationController+Skins.swift
 //  Skins
 //
-//  Created by tramp on 2021/4/23.
+//  Created by tramp on 2021/4/26.
 //
 
 import Foundation
-import UIKit.UIContextualAction
+import UIKit
 
-@available(iOS 11.0, *)
-extension SKCompatibleWrapper where Base: UIContextualAction {
+extension SKCompatibleWrapper where Base: UIPopoverPresentationController {
     
-    /// The background color of the action button.
+    /// Set popover background color. Set to nil to use default background color. Default is nil
     public var backgroundColor: Skins.Color? {
         get { nil }
         set {
@@ -23,7 +22,6 @@ extension SKCompatibleWrapper where Base: UIContextualAction {
             let action: SKAction = .init(entity: .color(color, { [weak base] (style, color) in
                 base?.backgroundColor = color.color(for: style)
             }))
-
             Skins.shared.set((actionKey, action), for: base)
             action.run()
         }

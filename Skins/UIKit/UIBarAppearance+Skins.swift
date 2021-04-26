@@ -22,9 +22,9 @@ extension SKCompatibleWrapper where Base: UIBarAppearance {
                 return
             }
             let actionKey: SKAction.Key = .init(string: #function)
-            let action: SKAction = .init(color: color) { [weak base](style, color) in
+            let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
                 base?.backgroundColor = color.color(for: style)
-            }
+            }))
             Skins.shared.set((actionKey, action), for: base)
             action.run()
         }
@@ -35,13 +35,13 @@ extension SKCompatibleWrapper where Base: UIBarAppearance {
         get { nil }
         set {
             guard let colorKey = newValue, let color = Skins.shared.color(for: colorKey) else {
-                base.backgroundColor = nil
+                base.shadowColor = nil
                 return
             }
             let actionKey: SKAction.Key = .init(string: #function)
-            let action: SKAction = .init(color: color) { [weak base](style, color) in
-                base?.backgroundColor = color.color(for: style)
-            }
+            let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
+                base?.shadowColor = color.color(for: style)
+            }))
             Skins.shared.set((actionKey, action), for: base)
             action.run()
         }

@@ -20,9 +20,9 @@ extension SKCompatibleWrapper where Base: UIButton {
             return
         }
         let actionKey: SKAction.Key = .init(string: #function + "_\(state)")
-        let action: SKAction = .init(color: color) {[weak base] (style, color) in
+        let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
             base?.setTitleColor(color.color(for: style), for: state)
-        }
+        }))
         Skins.shared.set((actionKey, action), for: base)
         action.run()
     }
@@ -37,9 +37,9 @@ extension SKCompatibleWrapper where Base: UIButton {
             return
         }
         let actionKey: SKAction.Key = .init(string: #function + "_\(state)")
-        let action: SKAction = .init(color: color) {[weak base] (style, color) in
+        let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
             base?.setTitleShadowColor(color.color(for: style), for: state)
-        }
+        }))
         Skins.shared.set((actionKey, action), for: base)
         action.run()
     }
@@ -53,9 +53,9 @@ extension SKCompatibleWrapper where Base: UIButton {
                 return
             }
             let actionKey: SKAction.Key = .init(string: #function)
-            let action: SKAction = .init(color: color) { [weak base](style, color) in
+            let action: SKAction = .init(entity: .color( color, { [weak base](style, color) in
                 base?.tintColor = color.color(for: style)
-            }
+            }))
             Skins.shared.set((actionKey, action), for: base)
             action.run()
         }
