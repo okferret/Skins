@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         button.backgroundColor = .red
         view.addSubview(button)
         button.center = view.center
+        
+        Skins.shared.log()
     }
     
     /// actionHandle
@@ -41,7 +43,7 @@ class ViewController: UIViewController {
     
     deinit {
         print(#function)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             Skins.shared.log()
         }
     }

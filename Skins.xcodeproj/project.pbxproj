@@ -14,7 +14,6 @@
 		C72E9EC12632C4F100D9DF94 /* UIImageView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EC02632C4F100D9DF94 /* UIImageView+Skins.swift */; };
 		C72E9EC52632C58B00D9DF94 /* UIProgressView+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EC42632C58B00D9DF94 /* UIProgressView+Skins.swift */; };
 		C72E9ECB2632C73C00D9DF94 /* UIButton+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ECA2632C73C00D9DF94 /* UIButton+Skins.swift */; };
-		C72E9ECF2632C9C200D9DF94 /* UIColorWell+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ECE2632C9C200D9DF94 /* UIColorWell+Skins.swift */; };
 		C72E9ED32632CA6700D9DF94 /* UIPageControl+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ED22632CA6700D9DF94 /* UIPageControl+Skins.swift */; };
 		C72E9ED72632CAE800D9DF94 /* UISegmentedControl+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9ED62632CAE800D9DF94 /* UISegmentedControl+Skins.swift */; };
 		C72E9EDB2632CB5900D9DF94 /* UISlider+Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72E9EDA2632CB5900D9DF94 /* UISlider+Skins.swift */; };
@@ -103,7 +102,6 @@
 		C72E9EC02632C4F100D9DF94 /* UIImageView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Skins.swift"; sourceTree = "<group>"; };
 		C72E9EC42632C58B00D9DF94 /* UIProgressView+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Skins.swift"; sourceTree = "<group>"; };
 		C72E9ECA2632C73C00D9DF94 /* UIButton+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Skins.swift"; sourceTree = "<group>"; };
-		C72E9ECE2632C9C200D9DF94 /* UIColorWell+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColorWell+Skins.swift"; sourceTree = "<group>"; };
 		C72E9ED22632CA6700D9DF94 /* UIPageControl+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Skins.swift"; sourceTree = "<group>"; };
 		C72E9ED62632CAE800D9DF94 /* UISegmentedControl+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Skins.swift"; sourceTree = "<group>"; };
 		C72E9EDA2632CB5900D9DF94 /* UISlider+Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+Skins.swift"; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				C72E9F0E2632D27F00D9DF94 /* UIBarAppearance+Skins.swift */,
 				C72E9EF22632CE5C00D9DF94 /* UIBarButtonItem+Skins.swift */,
 				C72E9ECA2632C73C00D9DF94 /* UIButton+Skins.swift */,
-				C72E9ECE2632C9C200D9DF94 /* UIColorWell+Skins.swift */,
 				C72E9F302632D96D00D9DF94 /* UIContextualAction+Skins.swift */,
 				C72E9EC02632C4F100D9DF94 /* UIImageView+Skins.swift */,
 				C72E9EE22632CC5000D9DF94 /* UILabel+Skins.swift */,
@@ -472,7 +469,6 @@
 				C7C7387826325C6E002B134B /* SKUserInterfaceStyle.swift in Sources */,
 				C72E9F1D2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift in Sources */,
 				C72E9F0F2632D27F00D9DF94 /* UIBarAppearance+Skins.swift in Sources */,
-				C72E9ECF2632C9C200D9DF94 /* UIColorWell+Skins.swift in Sources */,
 				C7C7388626328A9B002B134B /* String+Skins.swift in Sources */,
 				C7B87AC12632521A00345BCF /* Skins.swift in Sources */,
 				C72E9F352632D9F600D9DF94 /* UIAlertController+Skins.swift in Sources */,

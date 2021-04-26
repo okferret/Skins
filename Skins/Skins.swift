@@ -151,7 +151,7 @@ extension Skins {
         lock.skin.safe {
             if let dict = map.object(forKey: target) {
                 dict[tuple.key] = tuple.action
-                map.setObject(dict, forKey: target)
+                // map.setObject(dict, forKey: target)
             } else {
                 let dict: NSMutableDictionary = [tuple.key: tuple.action]
                 map.setObject(dict, forKey: target)
