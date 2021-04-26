@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "Skins"
-spec.version      = "0.0.8"
+spec.version      = "0.0.9"
 spec.summary      = "Theme manager for swift projects."
 spec.swift_versions	  = '5.0'
 spec.homepage     = "https://github.com/imotoboy/Skins"
