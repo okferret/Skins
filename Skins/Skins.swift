@@ -17,6 +17,21 @@ public class Skins: NSObject {
     public static let shared: Skins = .init()
     ///  current interface style SKUserInterfaceStyle
     public private(set) var interfaceStyle: SKUserInterfaceStyle = .unspecified
+    /// isDark
+    public var isDark: Bool {
+        switch interfaceStyle {
+        case .dark: return true
+        case .light: return false
+        case .unspecified:
+            if #available(iOS 13.0, *) {
+                return UITraitCollection.current.userInterfaceStyle == .dark
+            } else {
+                return false
+            }
+        default:
+            return false
+        }
+    }
     // MARK: - 私有属性
     
     /// [ColorKey: SKColorable]
