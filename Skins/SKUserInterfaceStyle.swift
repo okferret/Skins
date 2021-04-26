@@ -19,10 +19,31 @@ public struct SKUserInterfaceStyle {
     /// raw value of SKUserInterfaceStyle
     internal let rawValue: String
     
+    /// UIUserInterfaceStyle
+    @available(iOS 13.0, *)
+    internal private(set) var overrideUserInterfaceStyle: UIUserInterfaceStyle {
+        get { UIUserInterfaceStyle.init(rawValue: overrideUserInterfaceStyleValue) ?? .unspecified }
+        set { overrideUserInterfaceStyleValue = newValue.rawValue }
+    }
+    
+    /// value of UIUserInterfaceStyle
+    private var overrideUserInterfaceStyleValue: Int = 0
+    
     /// 构建
     /// - Parameter rawValue: String
+    @available(iOS, introduced: 5.0, deprecated: 13.0, message: "deprecated use 'init(rawValue:overrideUserInterfaceStyle:)'")
     public init(rawValue: String) {
         self.rawValue = rawValue
+    }
+    
+    /// 构建
+    /// - Parameters:
+    ///   - rawValue: String
+    ///   - overrideUserInterfaceStyle: UIUserInterfaceStyle
+    @available(iOS 13.0, *)
+    public init(rawValue: String, overrideUserInterfaceStyle: UIUserInterfaceStyle = .light) {
+        self.rawValue = rawValue
+        self.overrideUserInterfaceStyle = overrideUserInterfaceStyle
     }
 }
 
@@ -41,11 +62,30 @@ extension SKUserInterfaceStyle: Equatable {
 extension SKUserInterfaceStyle {
     
     /// SKUserInterfaceStyle.unspecified
-    public static let unspecified: SKUserInterfaceStyle = .init(rawValue: "SKUserInterfaceStyle.unspecified")
+    public static let unspecified: SKUserInterfaceStyle = {
+        if #available(iOS 13.0, *) {
+            return .init(rawValue: "SKUserInterfaceStyle.unspecified", overrideUserInterfaceStyle: .unspecified)
+        } else {
+            return .init(rawValue: "SKUserInterfaceStyle.unspecified")
+        }
+    }()
     /// SKUserInterfaceStyle.light
-    public static let light: SKUserInterfaceStyle = .init(rawValue: "SKUserInterfaceStyle.light")
+    public static let light: SKUserInterfaceStyle = {
+        if #available(iOS 13.0, *) {
+            return .init(rawValue: "SKUserInterfaceStyle.light", overrideUserInterfaceStyle: .light)
+        } else {
+            return .init(rawValue: "SKUserInterfaceStyle.light")
+        }
+    }()
+    
     /// SKUserInterfaceStyle.dark
-    public static let dark: SKUserInterfaceStyle = .init(rawValue: "SKUserInterfaceStyle.dark")
+    public static let dark: SKUserInterfaceStyle = {
+        if #available(iOS 13.0, *) {
+            return .init(rawValue: "SKUserInterfaceStyle.dark", overrideUserInterfaceStyle: .dark)
+        } else {
+            return .init(rawValue: "SKUserInterfaceStyle.dark")
+        }
+    }()
     
     /// SKUserInterfaceStyle
     public static var current: SKUserInterfaceStyle {

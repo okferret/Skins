@@ -11,7 +11,13 @@ import UIKit
 
 extension SKUserInterfaceStyle {
     
-    internal static let cool: SKUserInterfaceStyle = .init(rawValue: "SKUserInterfaceStyle.cool")
+    internal static let cool: SKUserInterfaceStyle = {
+        if #available(iOS 13.0, *) {
+            return .init(rawValue: "SKUserInterfaceStyle.cool", overrideUserInterfaceStyle: .dark)
+        } else {
+            return .init(rawValue: "SKUserInterfaceStyle.cool")
+        }
+    }()
 }
 
 struct SKColor: SKColorable {

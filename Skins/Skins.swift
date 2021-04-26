@@ -94,21 +94,11 @@ extension Skins {
         self.interfaceStyle = interfaceStyle
         // save style
         save(style: interfaceStyle)
-        
-        switch interfaceStyle {
-        case .dark:
-            if #available(iOS 13.0, *) {
-                for window in UIApplication.shared.windows {
-                    window.overrideUserInterfaceStyle = .dark
-                }
+        // above 13.0
+        if #available(iOS 13.0, *) {
+            for window in UIApplication.shared.windows {
+                window.overrideUserInterfaceStyle = interfaceStyle.overrideUserInterfaceStyle
             }
-        case .light:
-            if #available(iOS 13.0, *) {
-                for window in UIApplication.shared.windows {
-                    window.overrideUserInterfaceStyle = .light
-                }
-            }
-        default: break
         }
         guard let map = map as? NSMapTable<AnyObject, AnyObject>, let dicts = NSAllMapTableValues(map) as? [NSDictionary] else { return }
         for dict in dicts {
