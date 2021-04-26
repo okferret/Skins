@@ -91,26 +91,37 @@ extension Skins {
     
     /// change style
     /// - Parameter interfaceStyle: SKUserInterfaceStyle
-    public func change(style interfaceStyle: SKUserInterfaceStyle) throws {
-        self.interfaceStyle = interfaceStyle
-        // save style
-        try save(style: interfaceStyle)
-        // above 13.0
-        if #available(iOS 13.0, *) {
-            for window in UIApplication.shared.windows {
-                window.overrideUserInterfaceStyle = interfaceStyle.overrideUserInterfaceStyle
-            }
-        }
+    public func change(style interfaceStyle: SKUserInterfaceStyle, animated: Bool = true) throws {
         guard let map = map as? NSMapTable<AnyObject, AnyObject>, let dicts = NSAllMapTableValues(map) as? [NSDictionary] else {
             throw SKError.init("NSMapTable covert fail")
         }
-        for dict in dicts {
-            for value in dict.allValues where value is SKAction {
-                guard let action = value as? SKAction else { continue }
-                action.run(with: interfaceStyle)
+        self.interfaceStyle = interfaceStyle
+        // save style
+        try save(style: interfaceStyle)
+        
+        /// execute
+        func execute() {
+            // above 13.0
+            if #available(iOS 13.0, *) {
+                for window in UIApplication.shared.windows {
+                    window.overrideUserInterfaceStyle = interfaceStyle.overrideUserInterfaceStyle
+                }
+            }
+            for dict in dicts {
+                for value in dict.allValues where value is SKAction {
+                    guard let action = value as? SKAction else { continue }
+                    action.run(with: interfaceStyle)
+                }
             }
         }
-
+        // execute
+        if animated == true {
+            UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear) {
+                execute()
+            }
+        } else {
+            execute()
+        }
     }
     
     /// save  interface to user defaults
