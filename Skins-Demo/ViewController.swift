@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     /// actionHandle
     /// - Parameter sender: UIButton
     @objc private func actionHandle(_ sender: UIButton) {
-        Skins.shared.change(style: .light)
+        try? Skins.shared.change(style: .dark)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

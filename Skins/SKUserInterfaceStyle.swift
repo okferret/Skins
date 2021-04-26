@@ -15,7 +15,7 @@ extension SKUserInterfaceStyle {
 }
 
 /// SKUserInterfaceStyle
-public struct SKUserInterfaceStyle {
+public struct SKUserInterfaceStyle: Codable {
     /// raw value of SKUserInterfaceStyle
     internal let rawValue: String
     

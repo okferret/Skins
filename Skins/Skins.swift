@@ -43,8 +43,9 @@ public class Skins: NSObject {
     /// SKUserInterfaceStyle
     private var _interfaceStyle: SKUserInterfaceStyle {
         let defaultKey = SKUserInterfaceStyle.userDefaultsKey
-        if let value = UserDefaults.standard.string(forKey: defaultKey) {
-            return .init(rawValue: value)
+        if let data = UserDefaults.standard.data(forKey: defaultKey),
+           let style = try? JSONDecoder.init().decode(SKUserInterfaceStyle.self, from: data)  {
+            return style
         } else {
             return .unspecified
         }
@@ -90,17 +91,19 @@ extension Skins {
     
     /// change style
     /// - Parameter interfaceStyle: SKUserInterfaceStyle
-    public func change(style interfaceStyle: SKUserInterfaceStyle) {
+    public func change(style interfaceStyle: SKUserInterfaceStyle) throws {
         self.interfaceStyle = interfaceStyle
         // save style
-        save(style: interfaceStyle)
+        try save(style: interfaceStyle)
         // above 13.0
         if #available(iOS 13.0, *) {
             for window in UIApplication.shared.windows {
                 window.overrideUserInterfaceStyle = interfaceStyle.overrideUserInterfaceStyle
             }
         }
-        guard let map = map as? NSMapTable<AnyObject, AnyObject>, let dicts = NSAllMapTableValues(map) as? [NSDictionary] else { return }
+        guard let map = map as? NSMapTable<AnyObject, AnyObject>, let dicts = NSAllMapTableValues(map) as? [NSDictionary] else {
+            throw SKError.init("NSMapTable covert fail")
+        }
         for dict in dicts {
             for value in dict.allValues where value is SKAction {
                 guard let action = value as? SKAction else { continue }
@@ -112,13 +115,14 @@ extension Skins {
     
     /// save  interface to user defaults
     /// - Parameter interfaceStyle: SKUserInterfaceStyle
-    private func save(style interfaceStyle: SKUserInterfaceStyle) {
+    private func save(style interfaceStyle: SKUserInterfaceStyle) throws {
         let defaultKey = SKUserInterfaceStyle.userDefaultsKey
         if interfaceStyle == .unspecified {
             UserDefaults.standard.setValue(nil, forKey: defaultKey)
             UserDefaults.standard.synchronize()
         } else {
-            UserDefaults.standard.setValue(interfaceStyle.rawValue, forKey: defaultKey)
+            let data = try JSONEncoder.init().encode(interfaceStyle)
+            UserDefaults.standard.setValue(data, forKey: defaultKey)
             UserDefaults.standard.synchronize()
         }
     }
