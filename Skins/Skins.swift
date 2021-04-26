@@ -66,7 +66,8 @@ extension Skins {
     ///   - colorType: color type
     ///   - fileUrl: url of plist file
     /// - Throws: Error
-    public func setup<T: SKColorable>(colorType: T.Type, fileUrl: URL) throws {
+    @discardableResult
+    public func setup<T: SKColorable>(colorType: T.Type, fileUrl: URL) throws -> Self {
         guard let dict = NSDictionary.init(contentsOf: fileUrl) as? [String: Any] else {
             throw SKError.init("can not paser plist file ....")
         }
@@ -77,6 +78,7 @@ extension Skins {
             let colorKey: Color = .init(rawValue: key)
             colors[colorKey] = color
         }
+        return self
     }
     
     /// color for key

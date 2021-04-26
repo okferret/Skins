@@ -226,11 +226,11 @@
 			isa = PBXGroup;
 			children = (
 				C72E9F1C2632D7BF00D9DF94 /* CAEmitterCell+Skins.swift */,
+				C7A23B062636541E0056129E /* CAGradientLayer+Skins.swift */,
 				C72E9F162632D5F200D9DF94 /* CALayer+Skins.swift */,
 				C72E9F202632D82600D9DF94 /* CAReplicatorLayer+Skins.swift */,
 				C72E9F242632D88B00D9DF94 /* CAShapeLayer+Skins.swift */,
 				C72E9F282632D8D300D9DF94 /* CATextLayer+Skins.swift */,
-				C7A23B062636541E0056129E /* CAGradientLayer+Skins.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -310,9 +310,9 @@
 		C7C7388B26328C8C002B134B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C72E9EB42632AD5200D9DF94 /* NSLock+Skins.swift */,
 				C7C7388526328A9B002B134B /* String+Skins.swift */,
 				C7C7387B263260D2002B134B /* UIColor+Extensions.swift */,
-				C72E9EB42632AD5200D9DF94 /* NSLock+Skins.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
