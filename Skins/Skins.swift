@@ -57,6 +57,31 @@ public class Skins: NSObject {
     private override init() {
         super.init()
         interfaceStyle = _interfaceStyle
+        // 方法交换
+        if #available(iOS 13.0, *),
+           let m1 = class_getInstanceMethod(Skins.self, #selector(Skins.traitCollectionDidChange(_:))),
+           let m2 = class_getInstanceMethod(UIScreen.self, #selector(UIScreen.traitCollectionDidChange(_:))) {
+            method_exchangeImplementations(m1, m2)
+        }
+        
+    }
+    
+    /// traitCollectionDidChange
+    /// - Parameter previousTraitCollection: UITraitCollection
+    @available(iOS 13.0, *)
+    @objc dynamic func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        // 方法交换后的结果， 运行时执行 UIScreen.traitCollectionDidChange(_:)
+        Skins.shared.perform(#selector(Skins.traitCollectionDidChange(_:)), with: previousTraitCollection)
+        // 更新SKUserInterfaceStyle
+        if Skins.shared.interfaceStyle == .unspecified, UITraitCollection.current.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+            do {
+                try Skins.shared.change(style: .unspecified)
+            } catch {
+                #if DEBUG
+                print(error)
+                #endif
+            }
+        }
     }
 }
 
