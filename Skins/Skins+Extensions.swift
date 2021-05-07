@@ -8,15 +8,20 @@
 import Foundation
 
 extension Skins {
+    /// KeyPath
+    public typealias KeyPath = String
+}
+
+extension Skins {
     
     /// Color
     public struct Color {
         /// keyPath
-        internal let keyPath: String
+        internal let keyPath: KeyPath
         
         /// 构建
         /// - Parameter rawValue: String
-        public init(keyPath: String) {
+        public init(keyPath: KeyPath) {
             self.keyPath = keyPath
         }
         
@@ -31,6 +36,4 @@ extension Skins {
     }
 }
 
-extension Skins.Color: Hashable {
-    
-}
+extension Skins.Color: Hashable {}
