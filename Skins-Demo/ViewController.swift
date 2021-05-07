@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.skin.backgroundColor = .meduim
+        view.skin.backgroundColor = .global(.major)
         
         
         let button = UIButton.init(type: .custom)
@@ -39,7 +39,8 @@ class ViewController: UIViewController {
             try? Skins.shared.change(style: .cool)
         case .cool:
             try? Skins.shared.change(style: .dark)
-        default: break
+        default:
+            try? Skins.shared.change(style: .dark)
         }
     }
     

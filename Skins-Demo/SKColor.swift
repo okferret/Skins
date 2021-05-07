@@ -48,18 +48,25 @@ extension SKColor {
     }
 }
 
+// MARK: - global
+
+struct Hue { }
+
+extension Hue {
+    /// Global
+    internal enum Global: String {
+        case major = "global.major"
+        case meduim = "global.meduim"
+        case foreground = "global.foreground"
+    }
+}
+
 extension Skins.Color {
     
-    /// major color
-    internal static var major: Skins.Color {
-        return .init(rawValue: #function)
-    }
-    
-    internal static var meduim: Skins.Color {
-        return .init(rawValue: #function)
-    }
-    
-    internal static var foreground: Skins.Color {
-        return .init(rawValue: #function)
+    /// 全局颜色
+    /// - Parameter color: Global
+    /// - Returns: Skins.Color
+    internal static func global(_ hue: Hue.Global) -> Skins.Color {
+        return .init(keyPath: hue.rawValue)
     }
 }

@@ -98,11 +98,14 @@ extension Skins {
             throw SKError.init("can not paser plist file ....")
         }
         let decoder: JSONDecoder = .init()
-        for (key, value) in dict {
-            let data = try JSONSerialization.data(withJSONObject: value, options: [])
-            let color = try decoder.decode(colorType.self, from: data)
-            let colorKey: Color = .init(rawValue: key)
-            colors[colorKey] = color
+        for (module, value) in dict where value is [String: Any] {
+            guard let value = value as? [String: Any] else { continue }
+            for (key, value) in value {
+                let data = try JSONSerialization.data(withJSONObject: value, options: [])
+                let color = try decoder.decode(colorType.self, from: data)
+                let colorKey: Color = .init(module: module, key: key)
+                colors[colorKey] = color
+            }
         }
         return self
     }
